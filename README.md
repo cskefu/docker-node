@@ -10,5 +10,5 @@ docker buildx build --push --platform linux/arm64,linux/amd64 -t sitespeedio/nod
 For CSKeFu
 
 ```
-docker build -t cskefu/node:v16.17.0 .
+docker build --build-arg TARGETPLATFORM=linux/amd64 -t cskefu/node:v16.17.0 .
 ```
